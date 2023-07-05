@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Delete</title>
+</head>
+<body>
+    <h1>{{ object.video_name }}</h1>
+    <p>Delete this Video?</p>
+    <form method="post">
+        {% csrf_token %}
+
+        <input type="submit" value="Delete Video :< ">
+    </form>
+</body>
+</html>

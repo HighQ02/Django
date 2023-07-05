@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Videos List</title>
+</head>
+<body>
+    {% for video in Videos %}
+        <h1>{{ video.video_name }}</h1>
+        <p>{{ video.author.username }}</p>
+        <p>{{ video.about_video }}</p>
+    {% endfor %}
+</body>
+</html>

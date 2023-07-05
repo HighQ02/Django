@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Detail</title>
+</head>
+<body>
+    <a href="{% url 'videos_list' %}"><h3>Show all Videos</h3></a>
+    <h1>{{ Video.video_name }}</h1>
+    <p>{{ Video.author  }}</p>
+    <p>{{ Video.about_video }}</p>
+</body>
+</html>
